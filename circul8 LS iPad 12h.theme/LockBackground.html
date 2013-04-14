@@ -1,0 +1,21 @@
+<html><head><script>
+
+//
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+//
+
+function GD(){p=new Date();nday=p.getDay();document.getElementById("db").innerHTML=""+tday[nday]+"";setTimeout("GD()",1000)};
+</script><script>
+
+//
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//
+
+function GM(){d=new Date();nday=d.getDay();nmonth=d.getMonth();ndate=d.getDate();nyear=d.getYear();
+if(nyear<1000){nyear=nyear+1900}document.getElementById("mb").
+
+//
+innerHTML=""+tmonth[nmonth]+" "+ndate+"";
+//
+
+setTimeout("GM()",1000)};</script><script>function GC(){d=new Date();nhour=d.getHours();if(nhour>12){nhour=nhour-"12"}if(nhour<=9){nhour="0"+nhour}nmin=d.getMinutes();if(nmin<=9){nmin="0"+nmin}document.getElementById("cb").innerHTML=""+nhour+":"+nmin+"";setTimeout("GC()",1000)};function AMPM(){a=new Date();funky=a.getHours();if(funky<=12){funky="AM"}else if(funky>12){funky="PM"}document.getElementById("ampm").innerHTML=""+funky+"";setTimeout("AMPM()",1000)};</script><style>body {background: url("W.jpg") no-repeat;background-size: 1024px 1024px;margin:0;padding:0;width:1024px;}@font-face {font-family: 'SourceSansProLight';src: url('Y.svg#SourceSansProLight') format('svg');}@font-face {font-family: 'SourceSansProExtraLight';src: url('X.svg#SourceSansProExtraLight') format('svg');}#cb, #db, #mb, #ampm {color:#ddd}#cb {display:inline-block;line-height: 200px; font-size: 240px; font-family: 'SourceSansProExtraLight'; margin: 200px 0 -15px 4px;}#db, #mb, #ampm {margin-left: 10px; line-height: 100px; font-size: 100px; font-family: 'SourceSansProLight'}#ampm {display:inline;}</style></head><body onload="GC();GD();GM();AMPM()"><div id="cb"></div><div id="ampm"></div><div id="db"></div><div id="mb"></div></body></html>

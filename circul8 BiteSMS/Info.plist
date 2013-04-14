@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>name</key>        
+    <string>circul8</string>
+    <key>description</key>
+    <string><![CDATA[
+<html>
+<style>
+body {font-size: larger; font-family: "Helvetica-Light"; color:#333 }
+</style>
+<body>
+<p>This only themes the qr/qc but you can get the full theme (full UI theme) by donating to charity. See link for more info:
+<a href="http://andreaslarsen.dk/c8ui">andreaslarsen.dk/c8ui</a>
+<img style="width:100%;margin-top:20px;" src="1.jpg">
+</body>
+</html>
+]]></string>
+
+    <key>retina</key>
+    <false/>
+    
+    <key>applies-to</key>
+    <string>qr</string>
+    <key>qr-corner-radius</key>
+    <real>5</real> <!-- 0 means square corners -->
+    <key>qr-button-text-color</key>
+    <string>#FFFFFF</string>
+    <key>qr-button-shadow-color</key>
+    <string>#FFFFFF00</string>
+    <key>qr-button-disabled-color</key>
+    <string>#DDDDDD</string>
+    <key>qr-send-text-color</key>
+    <string>#FFFFFF</string>
+    <key>qr-send-shadow-color</key>
+    <string>#DDDDDD01</string>
+    <key>qr-send-disabled-color</key>
+    <string>#DDDDDD</string>
+</dict></plist>
